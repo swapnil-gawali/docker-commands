@@ -135,3 +135,93 @@ docker container port <CONTAINER_ID>
 ```
 docker container --expose <PORT_NUMBER> <IMAGE_NAME>
 ```
+
+### Volumes
+
+<br />
+
+
+* Create volume
+```
+docker volume create <VOLUME_NAME>
+```
+
+* List all volume
+```
+docker volume ls
+```
+
+* Remove volume
+```
+docker colume rm <VOLUME_NAME>
+```
+
+* Adding volume to container using mount flag
+```
+docker container run -d --mount type=bind,source=<LOCAL_FOLDER_PATH_TO_MOUNT>,target=/<CONATINER_FOLDER_PATH_TO_MOUNT> <IMAGE_NAME>
+```
+
+* Adding volume to container using volume flag
+```
+docker container run -d -v <LOCAL_FOLDER_PATH_TO_MOUNT>:/<CONATINER_FOLDER_PATH_TO_MOUNT> <IMAGE_NAME>
+```
+
+### Networking
+
+<br />
+
+* Create network
+```
+docker network create <NAME>
+```
+
+* list networks
+```
+docker network ls
+```
+
+### Docker-Compose
+
+<br />
+
+
+* Run container
+```
+docker-compose up
+```
+
+* Run containers in background
+```
+docker-compose up -d
+```
+
+* Get logs of all container
+```
+docker-compose logs
+```
+
+* Get logs of specific containers
+```
+docker-compose logs <CONTAINER_ID1> <CONTAINER_ID2>
+```
+
+* Stop container
+```
+docker-compose stop
+```
+
+* Start container
+```
+docker-compose start
+```
+
+* Removes all the container
+```
+docker-compose rm
+```
+
+* Rebuild all images
+```
+docker-compose up --build
+```
+
