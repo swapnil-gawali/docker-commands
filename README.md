@@ -36,7 +36,7 @@ docker image tag <EXISTING_IMAGE_NAME> <NEW_TAG_NAME>
 
 <br />
 
-* list all containers
+* List all containers
 ```
 docker container ls || docker container ls -a || docker container ps || docker container ps -a
 ```
@@ -175,7 +175,7 @@ docker container run -d -v <LOCAL_FOLDER_PATH_TO_MOUNT>:/<CONATINER_FOLDER_PATH_
 docker network create <NAME>
 ```
 
-* list networks
+* List networks
 ```
 docker network ls
 ```
